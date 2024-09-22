@@ -11,12 +11,10 @@ void enqueue(int val){
     if(front==-1 && rear==-1){
         front=0;
         rear=0;
-        //printf("\nElement inserted is %d",val);
         queue[rear]=val;
     }
     else{
         rear=((rear+1)%max);
-         //printf("\nElement inserted is %d",val);
         queue[rear]=val;
     }
 }
